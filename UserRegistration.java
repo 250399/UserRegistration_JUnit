@@ -13,4 +13,7 @@ public class UserRegistration {
     public boolean validatePhoneNo(String pnoPattern, String phoneNumber){
         return Pattern.matches(pnoPattern,phoneNumber);
     }
+    public boolean validatePassword(String passwordPattern, String password){
+        return Pattern.matches(passwordPattern,password);
+    }
 }

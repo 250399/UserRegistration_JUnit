@@ -10,12 +10,16 @@ public class UserRegistrationTest {
         Assert.assertTrue(object.validateName("^[A-Z]{1}[a-z]{2,}[ ][A-Z]{1}[a-z]{2,}$","Kaneki ken"));
     }
     @Test
-    public void Email(){
+    public void checkEmail(){
         Assert.assertTrue(object.validateName("^[a-zA-Z0-9]+[\\.\\-\\+\\_]?[a-zA-Z0-9]*@[a-zA-Z]+[.]?[a-zA-Z]{2,4}[\\.]?([a-z]{2})?$","Kaneki.ken@gmail.com.in"));
     }
     @Test
-    public void phoneNumber(){
+    public void checkPhoneNumber(){
         Assert.assertTrue(object.validateName("^[0-9]{2}[ ][0-9]{10}$","91 1234567809"));
+    }
+    @Test
+    public void checkPassword(){
+        Assert.assertTrue(object.validateName("(?=.*[a-z])(?=.*[A-Z])[a-zA-Z]{8,}","Password"));
     }
 
 
