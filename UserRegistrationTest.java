@@ -3,6 +3,7 @@ package com.bl.demo;
 import org.junit.Assert;
 import org.junit.Test;
 
+
 public class UserRegistrationTest {
     UserRegistration object = new UserRegistration();
     @Test
