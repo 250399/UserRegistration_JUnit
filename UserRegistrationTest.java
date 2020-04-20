@@ -19,7 +19,7 @@ public class UserRegistrationTest {
     }
     @Test
     public void checkPassword(){
-        Assert.assertTrue(object.validateName("(?=.*[a-z])(?=.*[A-Z])[a-zA-Z]{8,}","Password"));
+        Assert.assertTrue(object.validateName("(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])[a-zA-Z0-9]{8,}","123Password"));
     }
 
 
