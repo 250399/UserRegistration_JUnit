@@ -10,4 +10,7 @@ public class UserRegistration {
     public boolean validateEmail(String EmailPattern, String EmailId){
         return Pattern.matches(EmailPattern,EmailId);
     }
+    public boolean validatePhoneNo(String pnoPattern, String phoneNumber){
+        return Pattern.matches(pnoPattern,phoneNumber);
+    }
 }
